@@ -540,9 +540,32 @@ body {
   transform: translate(-50%, -50%);
   background-color: #fff;
   width: 75%;
-  height: 60%;
   border-radius: 5px;
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  display: table;
+  overflow: hidden;
+}
+.popup__left {
+  width: 33.3333333%;
+  display: table-cell;
+}
+.popup__right {
+  width: 66.6666667%;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 2rem 5rem;
+}
+.popup__img {
+  display: block;
+  width: 100%;
+}
+.popup__text {
+  font-size: 1.5rem;
+  margin-bottom: 4rem;
+  column-gap: 4rem;
+  column-count: 2;
+  column-rule: 1px solid #eee;
+  hyphens: auto;
 }
 
 .header {
