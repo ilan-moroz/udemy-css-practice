@@ -562,8 +562,8 @@ body {
 .popup__text {
   font-size: 1.5rem;
   margin-bottom: 4rem;
-  column-gap: 4rem;
   column-count: 2;
+  column-gap: 4rem;
   column-rule: 1px solid #eee;
   hyphens: auto;
 }
