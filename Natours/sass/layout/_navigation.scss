@@ -7,10 +7,10 @@
     background-color: $color-white;
     height: 7rem;
     width: 7rem;
-    border-radius: 50%;
     position: fixed;
     top: 6rem;
     right: 6rem;
+    border-radius: 50%;
     z-index: 2000;
     box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
     text-align: center;
@@ -42,13 +42,13 @@
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
 
     @include respond(tab-port) {
-      top: 4rem;
-      right: 4rem;
+      top: 4.5rem;
+      right: 4.5rem;
     }
 
     @include respond(phone) {
-      top: 3rem;
-      right: 3rem;
+      top: 3.5rem;
+      right: 3.5rem;
     }
   }
 
@@ -58,6 +58,7 @@
     top: 0;
     left: 0;
     z-index: 1500;
+
     opacity: 0;
     width: 0;
     transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -83,8 +84,8 @@
       display: inline-block;
       font-size: 3rem;
       font-weight: 300;
-      color: $color-white;
       padding: 1rem 2rem;
+      color: $color-white;
       text-decoration: none;
       text-transform: uppercase;
       background-image: linear-gradient(
@@ -93,7 +94,7 @@
         transparent 50%,
         $color-white 50%
       );
-      background-size: 230%;
+      background-size: 220%;
       transition: all 0.4s;
 
       span {
@@ -110,9 +111,9 @@
     }
   }
 
-  // functionally
+  //FUNCTIONALITY
   &__checkbox:checked ~ &__background {
-    transform: scale(95);
+    transform: scale(80);
   }
 
   &__checkbox:checked ~ &__nav {
@@ -120,10 +121,11 @@
     width: 100%;
   }
 
-  // icon
+  //ICON
   &__icon {
     position: relative;
     margin-top: 3.5rem;
+
     &,
     &::before,
     &::after {
@@ -140,6 +142,7 @@
       left: 0;
       transition: all 0.2s;
     }
+
     &::before {
       top: -0.8rem;
     }
@@ -148,11 +151,11 @@
     }
   }
 
-  &__button:hover &__icon:before {
+  &__button:hover &__icon::before {
     top: -1rem;
   }
 
-  &__button:hover &__icon:after {
+  &__button:hover &__icon::after {
     top: 1rem;
   }
 
@@ -161,12 +164,12 @@
   }
 
   &__checkbox:checked + &__button &__icon::before {
-    transform: rotate(135deg);
     top: 0;
+    transform: rotate(135deg);
   }
 
   &__checkbox:checked + &__button &__icon::after {
-    transform: rotate(-135deg);
     top: 0;
+    transform: rotate(-135deg);
   }
 }
