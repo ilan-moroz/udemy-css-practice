@@ -72,8 +72,8 @@ body {
 }
 
 .hotel-view {
+  background-color: #fff;
   flex: 1;
-  height: 200rem;
 }
 
 .detail {
@@ -84,6 +84,7 @@ body {
 }
 
 .description {
+  font-size: 1.5rem;
   background-color: #fff;
   box-shadow: var(--shadow-light);
   padding: 3rem;
